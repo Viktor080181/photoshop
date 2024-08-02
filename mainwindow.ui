@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_file"/>
+    <addaction name="actionOpen_File"/>
+    <addaction name="actionSave_File"/>
+    <addaction name="actionSave_File_As"/>
+   </widget>
+   <widget class="QMenu" name="menuChanging_the_size">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <widget class="QMenu" name="menuChanging_the_size_2">
+     <property name="title">
+      <string>Changing the size</string>
+     </property>
+     <addaction name="action3_4"/>
+     <addaction name="action5_4"/>
+     <addaction name="action2_3"/>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="menuChanging_the_size_2"/>
+    <addaction name="actionFraming"/>
+    <addaction name="actionHighlighting_by_color"/>
+    <addaction name="actionCreating_an_image_based_on_a_neural_network_text_query"/>
+   </widget>
+   <widget class="QMenu" name="menuDrawing">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionEraser"/>
+    <addaction name="actionBrush"/>
+   </widget>
+   <widget class="QMenu" name="menuLayers">
+    <property name="title">
+     <string>Layers</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionEdit"/>
+    <addaction name="actionEdit_2"/>
+    <addaction name="actionDelete_Layers"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuChanging_the_size"/>
+   <addaction name="menuDrawing"/>
+   <addaction name="menuLayers"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew_file">
+   <property name="text">
+    <string>New File</string>
+   </property>
+  </action>
+  <action name="actionOpen_File">
+   <property name="text">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="actionSave_File">
+   <property name="text">
+    <string>Save File</string>
+   </property>
+  </action>
+  <action name="actionSave_File_As">
+   <property name="text">
+    <string>Save File As</string>
+   </property>
+  </action>
+  <action name="actionFraming">
+   <property name="text">
+    <string>Framing</string>
+   </property>
+  </action>
+  <action name="actionEraser">
+   <property name="text">
+    <string>Eraser</string>
+   </property>
+  </action>
+  <action name="actionBrush">
+   <property name="text">
+    <string>Brush</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="text">
+    <string> Creat Layers</string>
+   </property>
+  </action>
+  <action name="actionEdit_2">
+   <property name="text">
+    <string> Edit Layers</string>
+   </property>
+  </action>
+  <action name="actionDelete_Layers">
+   <property name="text">
+    <string>Delete Layers</string>
+   </property>
+  </action>
+  <action name="actionHighlighting_by_color">
+   <property name="text">
+    <string>Highlighting by color</string>
+   </property>
+  </action>
+  <action name="actionCreating_an_image_based_on_a_neural_network_text_query">
+   <property name="text">
+    <string>Creating an image based on a neural network text query</string>
+   </property>
+  </action>
+  <action name="action3_4">
+   <property name="text">
+    <string>3:4</string>
+   </property>
+  </action>
+  <action name="action5_4">
+   <property name="text">
+    <string>5:4</string>
+   </property>
+  </action>
+  <action name="action2_3">
+   <property name="text">
+    <string>2:3</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
