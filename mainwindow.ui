@@ -31,6 +31,7 @@
     <addaction name="actionOpen_File"/>
     <addaction name="actionSave_File"/>
     <addaction name="actionSave_File_As"/>
+    <addaction name="actionClose_File"/>
    </widget>
    <widget class="QMenu" name="menuChanging_the_size">
     <property name="title">
@@ -146,6 +147,11 @@
   <action name="action2_3">
    <property name="text">
     <string>2:3</string>
+   </property>
+  </action>
+  <action name="actionClose_File">
+   <property name="text">
+    <string>Close File</string>
    </property>
   </action>
  </widget>

@@ -2,6 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QFileDialog>
+#include <QLabel>
+#include <QFile>
+#include <QTextStream>
+#include <QPixmap>
+#include <QString>
+#include <QImageReader>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -22,7 +29,13 @@ private slots:
 
     void on_actionOpen_File_triggered();
 
+    //void on_actionSave_File_triggered();
+
+    void on_actionSave_File_triggered();
+
 private:
     Ui::MainWindow *ui;
+
+    QLabel* _imgV;
 };
 #endif // MAINWINDOW_H

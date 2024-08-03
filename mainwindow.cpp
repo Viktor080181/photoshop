@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->_imgV = new QLabel(ui->centralwidget);
 }
 
 MainWindow::~MainWindow()
@@ -15,11 +16,28 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_actionNew_file_triggered()
 {
+    QPixmap* image = new QPixmap(QSize(100, 200));
+    image->fill();
 
+
+    this->_imgV->setPixmap(*image);
+    this->_imgV->show();
 }
 
-
 void MainWindow::on_actionOpen_File_triggered()
+{
+    QFileDialog* dialog = new QFileDialog(this);
+    dialog->setNameFilter("Images (*.png *.jpg)");
+    QString imgPath = dialog->getOpenFileName();
+
+    QImageReader* reader = new QImageReader(imgPath);
+    QPixmap image = QPixmap::fromImage(reader->read());
+
+    this->_imgV->setPixmap(image);
+    this->_imgV->resize(this->_imgV->pixmap().size());
+}
+
+void MainWindow::on_actionSave_File_triggered()
 {
 
 }
