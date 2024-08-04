@@ -2,6 +2,11 @@
 
 #include <QApplication>
 #include <QPointer>
+#include <QFileDialog>
+#include <QString>
+#include <QImage>
+#include <QSize>
+#include <Qlabel>
 
 int main(int argc, char *argv[])
 {

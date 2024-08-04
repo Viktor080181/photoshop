@@ -37,6 +37,24 @@ void MainWindow::on_actionOpen_File_triggered()
     this->_imgV->resize(this->_imgV->pixmap().size());
 }
 
+void MainWindow::on_action3_4_triggered()
+{
+    this->_imgV->setPixmap(this->_imgV->pixmap().scaled(100, 50));
+}
+
+
+void MainWindow::on_action5_4_triggered()
+{
+    this->_imgV->setPixmap(this->_imgV->pixmap().scaled(200, 100));
+}
+
+
+void MainWindow::on_action2_3_triggered()
+{
+    this->_imgV->setPixmap(this->_imgV->pixmap().scaled(300, 150));
+}
+
+
 void MainWindow::on_actionSave_File_triggered()
 {
 

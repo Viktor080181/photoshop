@@ -29,7 +29,11 @@ private slots:
 
     void on_actionOpen_File_triggered();
 
-    //void on_actionSave_File_triggered();
+    void on_action3_4_triggered();
+
+    void on_action5_4_triggered();
+
+    void on_action2_3_triggered();
 
     void on_actionSave_File_triggered();
 

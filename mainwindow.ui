@@ -30,8 +30,6 @@
     <addaction name="actionNew_file"/>
     <addaction name="actionOpen_File"/>
     <addaction name="actionSave_File"/>
-    <addaction name="actionSave_File_As"/>
-    <addaction name="actionClose_File"/>
    </widget>
    <widget class="QMenu" name="menuChanging_the_size">
     <property name="title">
