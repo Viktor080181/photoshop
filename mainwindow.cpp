@@ -57,6 +57,8 @@ void MainWindow::on_action2_3_triggered()
 
 void MainWindow::on_actionSave_File_triggered()
 {
-
+    QFileDialog* dialog = new QFileDialog(this);
+    dialog->setNameFilter("Images (*.png *.jpg)");
+    QString imgSavePath = dialog->getSaveFileName();
+    this->_imgV->pixmap().save(imgSavePath, "PNG");
 }
-
