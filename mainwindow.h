@@ -9,6 +9,13 @@
 #include <QPixmap>
 #include <QString>
 #include <QImageReader>
+#include <QRect>
+#include <QFrame>
+#include <QSize>
+#include <QGraphicsSceneMouseEvent>
+#include <QtWidgets/QGraphicsPixmapItem>
+#include <QtWidgets/QGraphicsRectItem>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -36,6 +43,8 @@ private slots:
     void on_action2_3_triggered();
 
     void on_actionSave_File_triggered();
+
+    void on_actionFraming_triggered();
 
 private:
     Ui::MainWindow *ui;

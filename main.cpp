@@ -1,4 +1,6 @@
 #include "mainwindow.h"
+#include "main-widget.h"
+#include "ui.h"
 
 #include <QApplication>
 #include <QPointer>
@@ -11,7 +13,10 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    MainWidget mainWindow;
+    mainWindow.show();
+
+    UI ui = UI(&mainWindow);
+
     return a.exec();
 }

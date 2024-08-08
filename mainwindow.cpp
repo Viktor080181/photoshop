@@ -62,3 +62,14 @@ void MainWindow::on_actionSave_File_triggered()
     QString imgSavePath = dialog->getSaveFileName();
     this->_imgV->pixmap().save(imgSavePath, "PNG");
 }
+
+
+
+void MainWindow::on_actionFraming_triggered()
+{
+    //QRect	frameRect() const
+    //void	setFrameRect(const QRect &)
+    //QPixmap image croppedImage = originalImage.copy(validRect);
+
+}
+
